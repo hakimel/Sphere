@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+		<meta charset="utf-8">
+		
+		<meta name="description" content="HTML5 Canvas Math Doodle" />
+		<meta name="author" content="Hakim El Hattab" />
+		
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width = 450">
+		
+        <title>Sphere</title>
+        
+		<link href="css/reset.css" rel="stylesheet" media="screen" />
+		<link href="css/main.css" rel="stylesheet" media="screen" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+		
+    </head>
+    <body>
+    	<header>
+    		<h1>Sphere</h1>
+    		<span class="header-instruction">Expand for more info.</span>
+    		
+    		<!-- The extra content that can be expanded -->
+    		<div class="extra">
+	    		
+    			<!-- Description of the experiment -->
+    			<section id="about">
+    				<h3>About</h3>
+	    			<p>
+						When bored, I sometimes open a blank JavaScript<br> 
+						file and start writing without any clear objective<br> 
+						of where I want to take it. This is the result of one<br> 
+						such coding session.
+	    			</p>
+	    			<p class="credits">
+	    				Created by <a href="http://hakim.se/">Hakim El Hattab</a> | <a href="http://twitter.com/hakimel">@hakimel</a>
+    				</p>
+	    		</section>
+				
+    			<section>
+    				<h3>Source</h3>
+	    			<p>
+						After some fiddling and minification I was able to <br>
+						squeeze the JavaScript source into 372 bytes.<br> 
+						You can find it on <a href="">GitHub</a>.
+	    			</p>
+	    		</section>
+	    		
+	    		<!-- Social sharing -->
+	    		<section id="share">
+	    			<h3>Share</h3>
+					<iframe id="facebook-button" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhakim.se%2Fexperiments%2Fhtml5%2Fsphere%2F&amp;layout=box_count&amp;show_faces=false&amp;width=55&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=60" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:60px;" allowTransparency="true"></iframe> 
+					<div id="retweet-button"> 
+						<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://hakim.se/experiments/html5/sphere/" data-text="Sphere - a doodle with math and canvas by @hakimel" data-count="vertical" data-related="hakimel">Tweet</a> 
+						<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
+					</div> 
+	    		</section>
+	    		</section>
+	    		
+    		</div>
+    	</header>
+		
+		<script src="js/header.js"></script>
+		<script src="js/sphere.min.js"></script>
+		
+		<!-- Third party tracking and sharing code below -->
+		
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-15240703-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+		
+		<script src="http://www.w3counter.com/tracker.js"></script>
+		<script>
+			w3counter(49720);
+			var ps = document.createElement('script');
+				ps.type = 'text/javascript';
+				ps.async = true;
+				ps.src = '//pulse.w3counter.com/pulse.js?id=49720';
+			(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(ps);
+		</script>
+		
+    </body>
+</html>

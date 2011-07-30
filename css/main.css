@@ -1,0 +1,244 @@
+
+
+/*********************************************
+ * GLOBAL
+ *********************************************/
+
+body, html {
+	overflow: hidden;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-size: 11px;
+	background: #010c12;
+}
+
+
+/*********************************************
+ * HEADER
+ *********************************************/
+
+header {
+	position: relative;
+	width: 100%;
+	height: 27px;
+	margin: 0;
+	padding: 0 8px 8px 8px;
+	overflow: hidden;
+	z-index: 5;
+	
+	background: rgba( 60, 60, 60, 0.5 );
+	color: #eee;
+	
+	-webkit-transition: height .22s ease-out;
+	   -moz-transition: height .22s ease-out;
+	     -o-transition: height .22s ease-out;
+	        transition: height .22s ease-out;
+}
+
+	header.open {
+		height: 165px;
+	}
+	
+	header h1 {
+		font-family: Molengo, Helvetica, Arial, sans-serif;
+		float: left;
+		margin-top: 1px;
+	}
+	
+	header .header-instruction {
+		float: left;
+		margin: 12px 0 0 15px;
+		
+		font-size: 10px;
+		font-style: italic;
+		color: #999;
+		
+		-webkit-transition: opacity .18s linear;
+		   -moz-transition: opacity .18s linear;
+		     -o-transition: opacity .18s linear;
+		        transition: opacity .18s linear;
+	}
+		header.open .header-instruction {
+			opacity: 0;
+		}
+	header div.extra {
+		margin: 45px 0 0 20px;
+		clear: both;
+		
+		-webkit-transition: opacity .18s linear;
+		   -moz-transition: opacity .18s linear;
+		     -o-transition: opacity .18s linear;
+		        transition: opacity .18s linear;
+	}
+		header div.extra h3 {
+			margin-bottom: 10px;
+		}
+		header a {
+			padding: 2px 4px 2px 2px;
+			color: #999;
+			
+			-webkit-transition: all .1s ease-out;
+			   -moz-transition: all .1s ease-out;
+			     -o-transition: all .1s ease-out;
+			        transition: all .1s ease-in;
+		}
+			header a:hover {
+				padding: 2px 4px 2px 2px;
+				
+				color: #ddd;
+				background-color: #333;
+				border-radius: 1px;
+			}
+		header section {
+			height: 120px;
+			padding: 0 25px;
+			float: left;
+			
+			border-left: 1px #333 solid;
+		}
+		header p {
+			margin-bottom: 5px;
+			
+			font-size: 12px;
+			letter-spacing: 0.05em;
+		}
+		#about {
+			padding-left: 0;
+			border: none;
+		}
+		#about p.credits {
+			margin: 15px 0 2px 0;
+			
+			font-style: italic;
+			color: #666;
+			font-size: 11px;
+			line-height: 1.4em;
+		}
+		#about a:hover {
+			padding: 2px 10px 2px 8px;
+		}
+		#share iframe, 
+		#share div {
+			display: inline-block;
+		}
+		#retweet-button {
+			margin-right: 6px;
+		}
+		
+a[href="http://www.w3counter.com"] {
+	display: none!important;
+}
+
+.no-canvas {
+	color: #999999;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 150px;
+}
+
+
+/*********************************************
+ * EXPERIMENT STYLES
+ *********************************************/
+
+canvas {
+	z-index: 1;
+}
+
+#background {
+	border: none;
+	z-index: 0;
+}
+
+.ui {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;
+	text-align: left;
+	padding: 8px;
+	background-color: rgba(0,0,0,0.5);
+	float: left;
+}
+
+#status {
+	width: 884px;
+	height: 15px;
+	padding: 8px;
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+
+#status span {
+	color: #bbbbbb;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+#status .fps {
+	float: right;
+}
+
+#panels {
+	width: 100%;
+	position: absolute;
+	z-index: 3;
+}
+
+#message {
+	padding: 16px;
+	margin-top: 10px;
+	width: 225px;
+}
+
+.ui h2 {
+	margin-bottom: 20px;
+	color: #eeeeee;
+}
+
+.ui ul {
+	margin: 10px 0;
+}
+
+.ui ul li {
+	margin: 0 0 2px 0;
+}
+
+.ui a {
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 38px;
+	text-decoration: none;
+	color: #bbbbbb;
+	padding: 2px;
+	display: block;
+	transition: all .18s linear;
+	-o-transition: all .18s linear;
+	-moz-transition: all .18s linear;
+	-webkit-transition: all .18s linear;
+}
+
+.ui a:hover {
+	color: #ffffff;
+	background-color: #000000;
+	transition: all .18s linear;
+	-o-transition: all .18s linear;
+	-moz-transition: all .18s linear;
+	-webkit-transition: all .18s linear;
+}
+
+.ui a.external {
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #bbbbbb;
+	display: inline;
+	padding: 0;
+}
+
+.ui a.external:hover {
+	color: #ffffff;
+}
+
