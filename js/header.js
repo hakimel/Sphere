@@ -4,7 +4,7 @@
  * 
  * @author Hakim El Hattab / http://hakim.se
  */
-(function(){
+window.onload = function() {
 	
 	var header = document.getElementsByTagName('header')[0];
 	var headerToggleTimeOut = -1;
@@ -44,4 +44,4 @@
 		}, 100 );
 	}, false);
 	
-})();
+};
